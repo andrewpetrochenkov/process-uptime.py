@@ -13,26 +13,20 @@ $ [sudo] pip install process-uptime
 ```
 
 #### Examples
-starttime
+starttime (`datetime`)
 ```python
 from process_uptime import getstarttime
 
-getstarttime()    # current process
-getstarttime(42)  # process by pid
+getstarttime()    # current process starttime
+getstarttime(42)  # starttime by pid
 ```
 
-seconds
+uptime (`int` seconds)
 ```python
-from process_uptime import getseconds
+from process_uptime import getuptime
 
-getseconds()
-```
-
-days
-```python
-from process_uptime import getdays
-
-getdays()
+getuptime()     # current process uptime
+getuptime(42)   # uptime by pid
 ```
 
 <p align="center">

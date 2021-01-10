@@ -13,9 +13,5 @@ def getstarttime(pid=None):
     return datetime.datetime.fromtimestamp(p.create_time())
 
 
-def getseconds(pid=None):
+def getuptime(pid=None):
     return int((datetime.now() - getstarttime(pid)).total_seconds())
-
-
-def getdays(pid=None):
-    return (datetime.now() - getstarttime(pid)).days
